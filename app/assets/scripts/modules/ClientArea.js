@@ -17,7 +17,7 @@ class ClientArea {
     }
 
     sendRequest() {
-        Axios.post('https://jovial-shirley-627302.netlify.app/.netlify/functions/secret-area', {password: this.form.value}).then(responce => {
+        Axios.post('https://jovial-shirley-627302.netlify.app/.netlify/functions/secret-area', {password: this.form.value}).then(response => {
             this.form.remove()
             this.contentArea.innerHTML = response.data
         }).catch(() => {
