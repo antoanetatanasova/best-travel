@@ -3,8 +3,16 @@ import 'lazysizes'
 import MobileMenu from './modules/MobileMenu'
 import RevealOnScroll from './modules/RevealOnScroll'
 import StickyHeader from './modules/StickyHeader'
-import ClientAres from './modules/ClientArea'
 import ClientArea from './modules/ClientArea'
+
+// React Related Code Goes Here
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+// Import React components that we created
+import MyAmazingComponent from './modules/MyAmazingComponent'
+
+ReactDOM.render(<MyAmazingComponent />, document.querySelector("#my-react-example"))
 
 new ClientArea()
 new StickyHeader()
